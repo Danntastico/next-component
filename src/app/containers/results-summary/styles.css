@@ -7,8 +7,10 @@
 .container {
   background-color: var(--main-bg-color);
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
+
+
 
 .results {
   align-items: center;
@@ -35,6 +37,7 @@
   display: flex;
   flex-direction: column;
   height: 170px;
+  justify-content: center;
   margin: 10px 0;
   width: 170px;
 }
@@ -98,9 +101,9 @@
   color: rgb(227, 66, 66);
 }
 .summary-statistics {
+  align-items: center;
   display: flex;
   flex-direction: row;
-  align-items: center;
   font-size: 1.2em;
 }
 .summary-statistics .total {
@@ -129,12 +132,15 @@
 }
 
 .container button {
-  border-radius: 70px;
-  padding: 20px;
-  font-size: 1.5em;
   background-color: rgb(63, 55, 75);
+  background: linear-gradient(0deg, rgba(57,0,238,1) 0%, rgba(102,65,255,1) 100%);
+  border-radius: 70px;
+  border: none;
+  font-size: 1.5em;
+  padding: 20px;
 }
 .container button:hover {
-  cursor: pointer;
   background-color: rgb(48, 41, 57);
+  background: linear-gradient(0deg, rgba(102,65,255,1) 0%, rgba(57,0,238,1) 100%);
+  cursor: pointer;
 }
